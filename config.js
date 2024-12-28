@@ -58,6 +58,15 @@ module.exports = {
           refContractName: "v2.ref-finance.near",
         };
       case "development":
+        return {
+          networkId: "testnet",
+          nodeUrl: process.env.NODE_URL || "https://rpc.testnet.near.org",
+          contractName: CONTRACT_NAME || "null_address.testnet",
+          walletUrl: "https://wallet.testnet.near.org",
+          helperUrl: "https://helper.testnet.near.org",
+          explorerUrl: "https://explorer.testnet.near.org",
+          refContractName: "exchange.ref-dev.testnet",
+        };
       case "testnet":
         return {
           networkId: "testnet",
