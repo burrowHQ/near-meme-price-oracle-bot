@@ -163,6 +163,16 @@ const MainnetCoins = {
     chainlink: "0xC12A6d1D827e23318266Ef16Ba6F397F2F91dA9b",
     pyth: "0xc415de8d2eba7db216527dff4b60e8f3a5311c740dadb233e13e12547e226750", // Crypto.NEAR/USD
   },
+  "17208628f84f5d6ad33f0da3bbbeb27ffcb398eac501a31bd6ad2011e36133a1": {
+    decimals: 6,
+    stablecoin: true,
+    coingecko: "usd-coin",
+    cryptocom: "USDC_USDT",
+    kucoin: "USDC-USDT",
+    binance: "USDCUSDT",
+    chainlink: "0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6",
+    pyth: "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a", // Crypto.USDC/USD
+  },
   // aurora: {
   //   decimals: 18,
   //   coingecko: "ethereum",
@@ -384,6 +394,9 @@ const computeMeMe = (dependencyTokenId, memeTokenId, memeTokenDecimals, memePool
 };
 
 const MainnetComputeCoins = {
+  "token.burrow.near": computeMeMe("wrap.near", "token.burrow.near", 18, 3474),
+  "blackdragon.tkn.near": computeMeMe("wrap.near", "blackdragon.tkn.near", 24, 4276),
+  "token.lonkingnearbackto2024.near": computeMeMe("wrap.near", "token.lonkingnearbackto2024.near", 8, 4314),
   //   "meta-pool.near": {
   //     dependencyCoin: "wrap.near",
   //     computeCall: async (dependencyPrice) => {
