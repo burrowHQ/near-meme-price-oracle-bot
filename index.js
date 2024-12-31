@@ -351,7 +351,7 @@ const MainnetCoins = {
 //   }
 // };
 
-const computeMeMe = (dependencyTokenId, memeTokenId, memeTokenDecimals, memePoolId, {memeTokenFractionDigits = 6, ignoreFees = true } = {}) => {
+const computeMeMe = (dependencyTokenId, memeTokenId, memeTokenDecimals, memePoolId, {memeTokenFractionDigits = 12, ignoreFees = true } = {}) => {
   return {
     dependencyCoin: dependencyTokenId,
     computeCall: async (dependencyPrice) => {
@@ -377,12 +377,12 @@ const computeMeMe = (dependencyTokenId, memeTokenId, memeTokenDecimals, memePool
           .div(Big(10000).mul(balanceIn).add(amountWithFee))
           .round(0, 0);
 
-        const discrepancy_denominator = Math.pow(10, memeTokenFractionDigits);
+        const discrepancy_denominator = Big(10).pow(memeTokenFractionDigits);
         const memePrice = dependencyTokenAmount
           .mul(dependencyPrice.multiplier)
-          .div(Big(10).pow(dependencyPrice.decimals)).toNumber()
+          .div(Big(10).pow(dependencyPrice.decimals))
         return {
-          multiplier: Math.round(memePrice * discrepancy_denominator),
+          multiplier: Math.round(memePrice.mul(discrepancy_denominator).toNumber()),
           decimals: memeTokenDecimals + memeTokenFractionDigits,
         }
       } catch (e) {
