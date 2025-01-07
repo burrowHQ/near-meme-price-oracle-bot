@@ -173,6 +173,13 @@ const MainnetCoins = {
     chainlink: "0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6",
     pyth: "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a", // Crypto.USDC/USD
   },
+  "usdt.tether-token.near": {
+    decimals: 6,
+    stablecoin: true,
+    coingecko: "tether",
+    chainlink: "0x3E7d1eAB13ad0104d2750B8863b489D65364e32D",
+    pyth: "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b", // Crypto.USDT/USD
+  },
   // aurora: {
   //   decimals: 18,
   //   coingecko: "ethereum",
