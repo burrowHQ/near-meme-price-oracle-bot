@@ -180,6 +180,18 @@ const MainnetCoins = {
     chainlink: "0x3E7d1eAB13ad0104d2750B8863b489D65364e32D",
     pyth: "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b", // Crypto.USDT/USD
   },
+  "nbtc.toalice.near": {
+    decimals: 8,
+    coingecko: "wrapped-bitcoin",
+    binance: "BTCUSDT",
+    huobi: "btcusdt",
+    cryptocom: "BTC_USDT",
+    kucoin: "BTC-USDT",
+    gate: "btc_usdt",
+    chainlink: "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
+    pyth: "0xe62df6c8b4a85fe1a67db44dc12de5db330f7ac66b72dc658afedf0f4a415b43", // Crypto.BTC/USD
+    fractionDigits: 2,
+  },
   // aurora: {
   //   decimals: 18,
   //   coingecko: "ethereum",
