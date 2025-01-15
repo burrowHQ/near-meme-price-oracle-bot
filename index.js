@@ -416,6 +416,11 @@ const MainnetComputeCoins = {
   "token.burrow.near": computeMeMe("wrap.near", "token.burrow.near", 18, 3474),
   "blackdragon.tkn.near": computeMeMe("wrap.near", "blackdragon.tkn.near", 24, 4276),
   "token.lonkingnearbackto2024.near": computeMeMe("wrap.near", "token.lonkingnearbackto2024.near", 8, 4314),
+  "gear.enleap.near": computeMeMe("wrap.near", "gear.enleap.near", 18, 3411),
+  "ftv2.nekotoken.near": computeMeMe("wrap.near", "ftv2.nekotoken.near", 24, 3807),
+  "token.0xshitzu.near": computeMeMe("wrap.near", "token.0xshitzu.near", 18, 4369),
+  "purge-558.meme-cooking.near": computeMeMe("wrap.near", "purge-558.meme-cooking.near", 18, 5650),
+  "abg-966.meme-cooking.near": computeMeMe("wrap.near", "abg-966.meme-cooking.near", 18, 5720),
   //   "meta-pool.near": {
   //     dependencyCoin: "wrap.near",
   //     computeCall: async (dependencyPrice) => {
